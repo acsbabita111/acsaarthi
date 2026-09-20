@@ -13,6 +13,11 @@
   .acs-logo-hero{width:min(430px,82vw);height:auto;display:block;margin:0 auto 18px;filter:drop-shadow(0 18px 38px rgba(11,31,58,.10))}
   .acs-logo-institution{width:min(220px,60vw);height:auto;display:block;margin:0 auto 24px}
   .acs-logo-footer{width:120px;height:auto;display:block;margin:0 auto 16px;filter:drop-shadow(0 10px 24px rgba(0,0,0,.18))}
+  .badges a.badge{text-decoration:none;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+  .badges a.badge:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,31,58,.10);border-color:#a9c9c2}
+  .institution-logo-link{display:inline-block;text-decoration:none}
+  .footer-trust-link{color:inherit;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.45)}
+  .footer-trust-link:hover{border-bottom-color:currentColor}
   @media(max-width:640px){.acs-logo-header{width:54px;height:54px}.acs-logo-hero{width:min(330px,88vw)}.acs-logo-footer{width:104px}}
 </style>
 <meta property="og:title" content="ACSAARTHI™">
@@ -39,7 +44,9 @@
 <section class="hero center">
   <div class="container">
     <div class="wordmark">
-      <img class="acs-logo-hero" src="acsaarthi_logo.png" alt="ACSAARTHI™ logo">
+      <a class="institution-logo-link" href="https://acsaarthi.com/" aria-label="ACSAARTHI home">
+        <img class="acs-logo-hero" src="acsaarthi_logo.png" alt="ACSAARTHI™ logo">
+      </a>
       <div class="wordmark-sub">Professional Driver Skills & Mobility Workforce Initiative</div>
     </div>
     <div class="eyebrow">Evidence-led workforce development</div>
@@ -111,19 +118,21 @@
 
 <section id="institution" class="section center">
   <div class="container">
-    <img class="acs-logo-institution" src="acsaarthi_logo.png" alt="ACSAARTHI™ project logo" loading="lazy">
+    <a class="institution-logo-link" href="https://acsaarthi.com/" aria-label="ACSAARTHI home">
+      <img class="acs-logo-institution" src="acsaarthi_logo.png" alt="ACSAARTHI™ project logo" loading="lazy">
+    </a>
     <div class="eyebrow">Institutional Background</div>
     <h2>An initiative of FFGPMT</h2>
     <p class="lead">ACSAARTHI™ is being developed within the education, skills and workforce-development ecosystem of Freedom Fighter Gangadhar Prasad Memorial Trust.</p>
-    <div class="badges">
-      <span class="badge">FFGPMT</span>
-      <span class="badge">Applied Computer School™</span>
-      <span class="badge">ACS-AI DIGITAL MASTER™</span>
-      <span class="badge">ACSLEARN™</span>
-      <span class="badge">GRANDMOM'S</span>
+    <div class="badges" aria-label="FFGPMT ecosystem websites">
+      <a class="badge" href="https://ffgpmt.org/" target="_blank" rel="noopener noreferrer" title="Visit Freedom Fighter Gangadhar Prasad Memorial Trust">FFGPMT</a>
+      <a class="badge" href="https://acs1.in/" target="_blank" rel="noopener noreferrer" title="Visit Applied Computer School">Applied Computer School™</a>
+      <a class="badge" href="https://acs-aidigitalmaster.org/" target="_blank" rel="noopener noreferrer" title="Visit ACS-AI DIGITAL MASTER">ACS-AI DIGITAL MASTER™</a>
+      <a class="badge" href="https://acslearn.com/" target="_blank" rel="noopener noreferrer" title="Visit ACSLEARN">ACSLEARN™</a>
+      <a class="badge" href="https://ffgpmt.org/#journey" target="_blank" rel="noopener noreferrer" title="View GRANDMOM'S within the FFGPMT journey">GRANDMOM'S</a>
     </div>
     <div class="actions">
-      <a class="btn" href="https://ffgpmt.org/">Visit FFGPMT</a>
+      <a class="btn" href="https://ffgpmt.org/" target="_blank" rel="noopener noreferrer">Visit FFGPMT</a>
       <a class="btn alt" href="mailto:info@ffgpmt.org">info@ffgpmt.org</a>
     </div>
   </div>
@@ -132,9 +141,11 @@
 
 <footer class="site-footer">
   <div class="container">
-    <img class="acs-logo-footer" src="acsaarthi_logo.png" alt="ACSAARTHI™ logo" loading="lazy">
+    <a class="institution-logo-link" href="https://acsaarthi.com/" aria-label="ACSAARTHI home">
+      <img class="acs-logo-footer" src="acsaarthi_logo.png" alt="ACSAARTHI™ logo" loading="lazy">
+    </a>
     <div class="footer-title">ACSAARTHI™</div>
-    <div class="footer-small">Professional Driver Skills & Mobility Workforce Initiative • Freedom Fighter Gangadhar Prasad Memorial Trust</div>
+    <div class="footer-small">Professional Driver Skills & Mobility Workforce Initiative • <a class="footer-trust-link" href="https://ffgpmt.org/" target="_blank" rel="noopener noreferrer">Freedom Fighter Gangadhar Prasad Memorial Trust</a></div>
     <div class="footer-small">Trademark application filed in India under Class 41. Registration is pending.</div>
     <div style="margin-top:12px"><a href="/privacy.html">Privacy & Study Data</a></div>
   </div>
